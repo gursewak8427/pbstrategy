@@ -1,6 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
-import { AppRoutes } from './utils/routes';
-import { MainLayout } from './layouts/MainLayout';
+import { Route, Routes } from "react-router-dom";
+import { AppRoutes } from "./utils/routes";
+import { MainLayout } from "./layouts/MainLayout";
+import { Button } from "@mui/material";
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
               element={<route.component />}
             />
           ))}
+          {/* Write more routes */}
         </Routes>
       </MainLayout>
-    </div >
+    </div>
   );
 }
 
