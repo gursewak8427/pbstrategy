@@ -21,7 +21,7 @@ const Intro = ({ ...props }) => {
         </p>
       </div>
 
-      <div className="flex justify-center gap-4 items-center w-full">
+      <div className="flex flex-col md:flex-row justify-center gap-4 items-center w-full">
         <span>🔍 Get Tailored Branding Tips</span>
         <span>📊 Instantly Analyze Your Online Presence</span>
       </div>

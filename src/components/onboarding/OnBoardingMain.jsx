@@ -93,7 +93,7 @@ const OnBoardingMain = ({ open, onClose }) => {
   };
 
   return (
-    <CustomModal maxWidth={"max-w-[45%]"} show={open} onClose={onClose}>
+    <CustomModal maxWidth={"max-w-full md:max-w-[45%]"} show={open} onClose={onClose}>
       <ModalHeading onClose={onClose}>{Headings[step]}</ModalHeading>
       <div className="relative overflow-hidden">
         <div className="transition-transform duration-300 ease-in-out">

@@ -8,7 +8,7 @@ export default function CustomButton({
   ...props
 }) {
   const defaultStyle =
-    "!px-6 !py-3 !rounded-[40px] !bg-black hover:!bg-gray-700 !text-white flex items-center gap-2";
+    "!text-xs md:!text-lg !px-6 !py-3 !rounded-[40px] !bg-black hover:!bg-gray-700 !text-white flex items-center gap-2";
 
   return (
     <Button className={`${defaultStyle} ${className}`} {...props}>
