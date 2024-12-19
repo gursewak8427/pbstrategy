@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY;
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 export default async function getAIResponse(userMessage, systemPrompt) {
