@@ -7,7 +7,8 @@ export default async function getAIResponse(userMessage, systemPrompt) {
   try {
     // Prepare the API request payload
     const payload = {
-      model: "llama3-8b-8192",
+      model: "gemma2-9b-it",
+      temperature: 0.8,
       messages: [
         {
           role: "user",

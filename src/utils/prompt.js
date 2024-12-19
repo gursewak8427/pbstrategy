@@ -6,6 +6,5 @@
 //   `Generate a professional brand statement for a Marketing Manager skilled in Leadership, Strategy, and Problem Solving. The statement should follow this format: 'I am a <b>[strength]</b> professional who excels in <b>[skill]</b>, committed to <b>[value]</b>, and known for <b>[unique trait]</b>.' Reflect their leadership, strategic thinking, and problem-solving skills in the unique trait. Return the brand statement within <brandStatement> tags. it is important tags - <brandStatement>`;
 
 export const getSystemPrompt = () =>
-  `Generate a professional brand statement using the user's role, strengths, skills, values, and unique traits. Format: 'I am a <b>[role]</b> who excels in <b>[skills]</b>, committed to <b>[values]</b>, and known for <b>[unique trait]</b>.' Highlight key points in <b>bold</b> or <i>italic</i>. Adjust if fields are missing. Wrap the result in <brandStatement> tags. 
-  IMPORTANT : Don't use double stars, i need html, not text.
-`;
+  `Generate a unique professional brand statement using the user's role, strengths, skills, values, and unique traits. Format it as a dynamic and personalized statement that highlights key strengths in <b>bold</b> only. The general structure could be something like: 'I am a <b>[role]</b> who excels in <b>[skills]</b>, driven by <b>[values]</b>, and recognized for <b>[unique trait]</b>.' However, feel free to modify the phrasing, making it sound natural and unique to the user. Emphasize key points in <b>bold</b> only. If any fields are missing, adjust the statement accordingly. Wrap the result in <brandStatement> tags. 
+  IMPORTANT: Use only HTML <b>bold</b> tags for styling, no italics or markdown syntax. Ensure the statement is personalized and fresh each time.`;
